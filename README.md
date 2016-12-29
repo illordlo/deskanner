@@ -2,7 +2,7 @@
 distributed scanner for wide networks
 
 # disclaimer
-as you can see in the "about" page, this project has been created, developed, tested and deployed in 40 minutes, so you are using it at your on risk. moreover, *the example is running a command as root using as argunent the content provided by the server*. again, even if HTTPS with certificate pinning is used and the input is lightly sanitized, you are doing it your one risk.
+as you can see in the "about" page, this project has been created, developed, tested and deployed in 40 minutes, so you are using it at your on risk. moreover, **the example is running a command as root using as argument the content provided by the server**. again, even if HTTPS with certificate pinning is used and the input is lightly sanitized, you are doing it your one risk.
 
 that said, you are fully responsible for using, misusing and blablabla of this software.
 
