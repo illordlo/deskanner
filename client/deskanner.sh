@@ -16,7 +16,7 @@ RANGE=`wget --ca-certificate= https://$SERVER_IP/range | egrep -oE "(25[0-5]|2[0
 while true; do
     read -p "[+] can i scan for ipsec ports on range ${RANGE}?" yn
     case $yn in
-        [Yy]* ) XML=`sudo nmap -oX - --open -T 5 -sU -p 500,4500 ${RANGE} | base64` && wget https://${STORAGE_SERVER_URL} --post-data=${XML} && break;;
+        [Yy]* ) wget https://${STORAGE_SERVER_URL} --post-data="`sudo nmap -oX - --open -T 5 -sU -p 500,4500 ${RANGE} | base64`" && break;;
         [Nn]* ) echo -e "[+] thanks anyway dude!" && exit;;
         * ) echo "Please answer yes or no.";;
     esac
