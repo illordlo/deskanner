@@ -1,4 +1,4 @@
-# theskanner
+# deskanner
 distributed scanner for wide networks
 
 # disclaimer
